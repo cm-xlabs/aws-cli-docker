@@ -6,29 +6,13 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/garland/aws-cli-docker.svg)](https://hub.docker.com/r/garland/aws-cli-docker/)
 [![Docker Stars](https://img.shields.io/docker/stars/garland/aws-cli-docker.svg)](https://hub.docker.com/r/garland/aws-cli-docker/)
 
-
-# Supported tags and respective `Dockerfile` links
-
-- [`0.1` (*0.1/Dockerfile*)](https://github.com/sekka1/aws-cli-docker/blob/0.1/0.1/Dockerfile)
-- [`0.2` (*0.2/Dockerfile*)](https://github.com/sekka1/aws-cli-docker/blob/0.2/0.2/Dockerfile)
-
-# AWS CLI Version
-
-* 1.11.131
-
-# Build
-
-```
-docker build -t garland/aws-cli-docker:x.x .
-```
-
 # Description
 
 Docker container with the AWS CLI installed.
 
 Using [Alpine linux](https://hub.docker.com/_/alpine/).  The Docker image is 87MB
 
-An automated build of this image is on Docker Hub: https://hub.docker.com/r/garland/aws-cli-docker/
+An automated build of this image is on Docker Hub: https://hub.docker.com/r/coremedia/aws-cli-docker/
 
 ## Getting your AWS Keys:
 
@@ -54,7 +38,7 @@ An automated build of this image is on Docker Hub: https://hub.docker.com/r/garl
     --env AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>> \
     --env AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_ACCESS>> \
     --env AWS_DEFAULT_REGION=us-east-1 \
-    garland/aws-cli-docker \
+    coremedia/aws-cli-docker \
     aws ec2 describe-instances --instance-ids i-90949d7a
 
 output:
@@ -81,7 +65,7 @@ output:
     docker run \
     --env AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>> \
     --env AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_ACCESS>> \
-    garland/aws-cli-docker \
+    coremedia/aws-cli-docker \
     aws s3 ls
 
 output:
@@ -95,7 +79,7 @@ output:
     --env AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>> \
     --env AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_ACCESS>> \
     -v $PWD:/data \
-    garland/aws-cli-docker \
+    coremedia/aws-cli-docker \
     aws s3 sync . s3://mybucket
 
 output:
@@ -113,7 +97,7 @@ We will map the private keys that resides on your local system to inside the con
     --env AWS_ACCESS_KEY_ID=<<YOUR_ACCESS_KEY>> \
     --env AWS_SECRET_ACCESS_KEY=<<YOUR_SECRET_ACCESS>> \
     --env AWS_DEFAULT_REGION=us-east-1 \
-    garland/aws-cli-docker \
+    coremedia/aws-cli-docker \
     aws ec2 get-password-data --instance-id  <<YOUR_INSTANCE_ID>> --priv-launch-key /tmp/key.pem
 
 Output:
