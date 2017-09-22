@@ -8,6 +8,6 @@ RUN apk --no-cache update && \
     pip --no-cache-dir install awscli==${AWS_CLI_VERSION} && \
     rm -rf /var/cache/apk/*
 
-COPY backup-s3 /usr/local/bin/
+COPY backup-s3.sh /usr/local/bin/backup-s3
 
 WORKDIR /data
