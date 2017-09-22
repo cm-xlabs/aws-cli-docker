@@ -1,10 +1,8 @@
 # AWS CLI Docker Container
-[![GitHub forks](https://img.shields.io/github/forks/sekka1/aws-cli-docker.svg)](https://github.com/sekka1/aws-cli-docker/network)
-[![GitHub stars](https://img.shields.io/github/stars/sekka1/aws-cli-docker.svg)](https://github.com/sekka1/aws-cli-docker/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/sekka1/aws-cli-docker.svg)](https://github.com/sekka1/aws-cli-docker/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/sekka1/aws-cli-docker.svg?style=social)](https://twitter.com/intent/tweet?text=AWS%20CLI%20in%20a%20%40Docker%20container%20%40AWSCLI:&url=https://github.com/sekka1/aws-cli-docker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/garland/aws-cli-docker.svg)](https://hub.docker.com/r/garland/aws-cli-docker/)
-[![Docker Stars](https://img.shields.io/docker/stars/garland/aws-cli-docker.svg)](https://hub.docker.com/r/garland/aws-cli-docker/)
+
+[![PyPI version](https://badge.fury.io/py/awscli.svg)](https://badge.fury.io/py/awscli)
+[![GitHub issues](https://img.shields.io/github/issues/cm-xlabs/aws-cli-docker.svg)](https://github.com/cm-xlabs/aws-cli-docker/issues)
+
 
 # Description
 
